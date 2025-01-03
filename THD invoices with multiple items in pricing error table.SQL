@@ -4,12 +4,9 @@ WITH ml AS (
     SELECT
         "INVOICE#",
         count("INVOICE#") AS "ITEMS"
-    FROM
-        "THDPricingError"
-    GROUP BY
-        "INVOICE#"
-    HAVING
-        (count("INVOICE#") > 1)
+    FROM "THDPricingError"
+    GROUP BY "INVOICE#"
+    HAVING (count("INVOICE#") > 1)
 )
                             
 SELECT "THDPricingError".*
