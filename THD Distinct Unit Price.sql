@@ -1,10 +1,10 @@
-CREATE VIEW "THD Distinct Unit Price" AS
+CREATE VIEW "THD"."THD Distinct Unit Price" AS
 SELECT
   "PART#",
   "HOME DEPOT COST",
   "VENDOR COST"
 FROM
-  "THDPricingError"
+  "THD"."THDPricingError"
 GROUP BY
   "PART#",
   "HOME DEPOT COST",
