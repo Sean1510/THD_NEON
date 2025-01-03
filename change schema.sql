@@ -1,0 +1,1 @@
+ALTER TABLE "public"."THDPricingError" SET SCHEMA "THD";

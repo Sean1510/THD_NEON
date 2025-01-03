@@ -1,0 +1,15 @@
+CREATE VIEW "THD Distinct Unit Price" AS
+SELECT
+  "PART#",
+  "HOME DEPOT COST",
+  "VENDOR COST"
+FROM
+  "THDPricingError"
+GROUP BY
+  "PART#",
+  "HOME DEPOT COST",
+  "VENDOR COST"
+ORDER BY
+  "PART#",
+  "HOME DEPOT COST",
+  "VENDOR COST";
